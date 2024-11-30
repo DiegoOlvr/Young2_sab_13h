@@ -37,7 +37,7 @@ function dispara_alarme() {
 
 function iniciar_alarme() {
     if (!tempo_intervalo) {
-        tempo_intervalo = setInterval(dispara_alarme, 1 * 60 * 1000)
+        tempo_intervalo = setInterval(dispara_alarme, 0.1 * 60 * 1000)
         alert('Alerta iniciado')
     }
 }
