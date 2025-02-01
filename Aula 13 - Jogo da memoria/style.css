@@ -43,3 +43,36 @@ div.container {
     display: grid;
     gap: 15px;
 }
+
+.escondido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#mensagem {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(99, 99, 99);
+    transition: background 0.3s ease-in-out;
+}
+
+#mensagem-texto{
+    text-transform: capitalize;
+    color: red;
+    font-weight: bold;
+}

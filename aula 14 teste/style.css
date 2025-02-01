@@ -1,0 +1,105 @@
+/* Geral */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Céu claro */
+}
+
+.mario {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+
+/* Chapéu */
+.hat {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    background-color: #E11C24; /* Vermelho do chapéu */
+    border-radius: 100px 100px 0 0;
+    border: 5px solid #000;
+}
+
+/* Rosto */
+.face {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    background-color: #FAD6A5; /* Cor de pele */
+    border-radius: 50%;
+    border: 5px solid #000;
+}
+
+/* Olhos */
+.eyes {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.eye {
+    width: 30px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.eye::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 12px;
+    height: 20px;
+    background-color: #000; /* Pupila */
+    border-radius: 50%;
+}
+
+.eye.left {
+    transform: translateX(-20px);
+}
+
+.eye.right {
+    transform: translateX(20px);
+}
+
+/* Nariz */
+.nose {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 30px;
+    background-color: #F4B183; /* Nariz mais escuro */
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+/* Bigode */
+.mustache {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 20px;
+    background-color: #000; /* Preto do bigode */
+    border-radius: 0 0 50px 50px;
+}
